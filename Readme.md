@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Соловьева](https://up.htmlacademy.ru/adaptive/14/user/217749).
-* Наставник: `Неизвестно`.
+* Наставник: [Альбина Токарчук](https://htmlacademy.ru/profile/id167491).
 
 ---
 
