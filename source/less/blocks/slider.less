@@ -1,0 +1,24 @@
+.slider__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__button {
+  flex-grow: 1;
+  width: 128px;
+  height: 52px;
+  background-color: white;
+  background-image: url("../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border: 1px solid #ececec;
+  &--next {
+    transform: rotate(180deg);
+  }
+}
+
+.slider__buttons {
+  display: flex;
+  width: 100%;
+}

@@ -1,0 +1,78 @@
+.shop-about {
+  position: relative;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.shop-about__image {
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  transform: translateX(-50%);
+}
+
+.shop-about__title {
+  position: relative;
+  z-index: 1;
+  display: block;
+  min-height: 212px;
+  padding-top: 70px;
+  padding-left: 36px;
+  padding-right: 36px;
+  font-size: 27px;
+  color: #010000;
+  text-align: center;
+}
+
+.shop-about__catalog-list {
+  position: relative;
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shop-about__catalog-item {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  &:first-child {
+    background-color: #63d1bb;
+  }
+  &:last-child {
+    background-color: #56c3b2;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+  }
+}
+
+.shop-about__catalog-item--interior::after {
+  top: 23px;
+  right: 36px;
+  width: 40px;
+  height: 62px;
+  background-image: url("../img/icon-interior.svg");
+}
+
+.shop-about__catalog-item--toys::after {
+  top: 21px;
+  right: 27px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/icon-toy.svg");
+}
+
+.shop-about__catalog-link {
+  display: block;
+  position: relative;
+  width: 170px;
+  padding-top: 26px;
+  padding-bottom: 29px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
