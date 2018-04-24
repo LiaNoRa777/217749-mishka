@@ -1,27 +1,18 @@
 .company-about {
   padding-top: 13px;
+  .padding-container();
 }
 
 .company-about__title {
   margin-bottom: 32px;
   font-size: 25px;
-  color: #000000;
+  color: @color-black;
 }
 
 .company-about__list {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.company-about__item::before {
-  content: "";
-  width: 55px;
-  height: 55px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-repeat: no-repeat;
 }
 
 .company-about__item {
@@ -31,6 +22,16 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
+
+  &::before {
+    content: "";
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+  }
 
   &--ecology::before {
     background-image: url("../img/icon-feature-flower.svg");

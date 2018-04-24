@@ -4,28 +4,24 @@
   border: 0;
 }
 
-.form-group__title {
-  min-width: 43px;
-  margin-right: 18px;
-  padding: 0;
+.form-group__title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 33px;
   font-size: 17px;
   font-weight: bold;
   line-height: 1;
-  color: #63d1bb;
+  color: @color-turquoise;
   text-transform: uppercase;
-}
-
-.form-group__legend-wrapper {
-  display: flex;
-  align-items: center;
-  margin-bottom: 33px;
+  overflow: hidden;
 
   &::after {
     content: "";
     flex-grow: 1;
-    width: 100px;
+    width: 50px;
     height: 1px;
-    background-color: #62d1ba;
+    background-color: @color-turquoise;
   }
 
   &--field {
@@ -40,6 +36,11 @@
   &--add {
     margin-bottom: 24px;
   }
+}
+
+.form-group__title {
+  min-width: 43px;
+  margin-right: 18px;
 }
 
 .form-group__radio-wrapper {
@@ -57,7 +58,7 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 18px;
-  color: #000000;
+  color: @color-black;
 }
 
 .form-group__radio-label {
@@ -70,7 +71,7 @@
     left: 0;
     width: 35px;
     height: 35px;
-    border: 2px solid #444444;
+    border: 2px solid @color-main;
     border-radius: 50%;
   }
 
@@ -86,7 +87,7 @@
 }
 
 .form-group__radio:checked + .form-group__radio-label::after {
-  background-color: #62d1ba;
+  background-color: @color-turquoise;
 }
 
 .form-group__checkbox-wrapper {
@@ -108,7 +109,7 @@
     left: 0;
     width: 36px;
     height: 35px;
-    border: 2px solid #444444;
+    border: 2px solid @color-main;
   }
 
   &::after {
@@ -122,8 +123,8 @@
 }
 
 .form-group__checkbox:checked + .form-group__checkbox-label::after {
-  border-left: 2px solid #000000;
-  border-bottom: 2px solid #000000;
+  border-left: 2px solid @color-black;
+  border-bottom: 2px solid @color-black;
   transform: rotate(-45deg);
 }
 
@@ -140,7 +141,7 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 18px;
-  color: #000000;
+  color: @color-black;
 }
 
 .form-group__field {
@@ -152,20 +153,10 @@
   font-size: 17px;
   line-height: 18px;
   border: none;
-  border-bottom: 2px solid #000000;
-
-  &::-webkit-input-placeholder {
-    color: #444444;
-    opacity: 0.3;
-  }
-
-  &:-ms-input-placeholder {
-    color: #444444;
-    opacity: 0.3;
-  }
+  border-bottom: 2px solid @color-black;
 
   &::placeholder {
-    color: #444444;
+    color: @color-main;
     opacity: 0.3;
   }
 
@@ -188,20 +179,10 @@
   font: inherit;
   font-size: 17px;
   line-height: 18px;
-  border: 2px solid #444444;
-
-  &::-webkit-input-placeholder {
-    color: #444444;
-    opacity: 0.3;
-  }
-
-  &:-ms-input-placeholder {
-    color: #444444;
-    opacity: 0.3;
-  }
+  border: 2px solid @color-main;
 
   &::placeholder {
-    color: #444444;
+    color: @color-main;
     opacity: 0.3;
   }
 }

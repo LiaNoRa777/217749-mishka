@@ -32,108 +32,104 @@
 
       <h1 class="page-main__title">Вязание на заказ</h1>
 
-      <div class="padding-container">
-
-        <section class="order">
-          <h2 class="visually-hidden">Форма заказа</h2>
-          <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-          <form class="order__form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="order__form-group form-group">
-              <div class="form-group__legend-wrapper">
-                <legend class="form-group__title">Тип</legend>
-              </div>
-              <div class="form-group__radio-wrapper">
-                <input class="visually-hidden form-group__radio" type="radio" id="interior" name="type" value="interior" checked>
-                <label class="form-group__radio-label" for="interior">Аксессуар для  интерьера</label>
-              </div>
-              <div class="form-group__radio-wrapper">
-                <input class="visually-hidden form-group__radio" type="radio" id="toy" name="type" value="toy">
-                <label class="form-group__radio-label" for="toy">Детская игрушка</label>
-              </div>
-            </fieldset>
-            <fieldset class="order__form-group form-group">
-              <div class="form-group__legend-wrapper">
-                <legend class="form-group__title">Цвет</legend>
-              </div>
-              <div class="form-group__checkbox-wrapper">
-                <input class="visually-hidden form-group__checkbox" type="checkbox" id="white" name="white" checked>
-                <label class="form-group__checkbox-label" for="white">Белый</label>
-              </div>
-              <div class="form-group__checkbox-wrapper">
-                <input class="visually-hidden form-group__checkbox" type="checkbox" id="gray" name="gray" checked>
-                <label class="form-group__checkbox-label" for="gray">Серый</label>
-              </div>
-              <div class="form-group__checkbox-wrapper">
-                <input class="visually-hidden form-group__checkbox" type="checkbox" id="tiffani" name="tiffani">
-                <label class="form-group__checkbox-label" for="tiffani">«Тиффани»</label>
-              </div>
-              <div class="form-group__checkbox-wrapper">
-                <input class="visually-hidden form-group__checkbox" type="checkbox" id="black" name="black">
-                <label class="form-group__checkbox-label" for="black">Черный</label>
-              </div>
-              <div class="form-group__checkbox-wrapper">
-                <input class="visually-hidden form-group__checkbox" type="checkbox" id="pink" name="pink">
-                <label class="form-group__checkbox-label" for="pink">Розовый</label>
-              </div>
-              <div class="form-group__checkbox-wrapper">
-                <input class="visually-hidden form-group__checkbox" type="checkbox" id="orange" name="orange">
-                <label class="form-group__checkbox-label" for="orange">Оранжевый</label>
-              </div>
-            </fieldset>
-            <fieldset class="order__form-group form-group">
-              <div class="form-group__legend-wrapper form-group__legend-wrapper--field">
-                <legend class="form-group__title">ФИО</legend>
-              </div>
-              <div class="form-group__field-wrapper">
-                <label class="form-group__field-label" for="firstname">Имя:</label>
-                <input class="form-group__field" type="text" id="firstname" placeholder="Введите ваше имя*" required>
-              </div>
-              <div class="form-group__field-wrapper">
-                <label class="form-group__field-label" for="lastname">Фамилия:</label>
-                <input class="form-group__field" type="text" id="lastname" placeholder="Укажите фамилию*" required>
-              </div>
-              <div class="form-group__field-wrapper form-group__field-wrapper--middle-name">
-                <label class="form-group__field-label" for="middle-name">Отчество:</label>
-                <input class="form-group__field" type="text" id="middle-name" placeholder="Отчество, если желаете">
-              </div>
-            </fieldset>
-            <fieldset class="order__form-group form-group">
-              <div class="form-group__legend-wrapper form-group__legend-wrapper--tel">
-                <legend class="form-group__title">Тел</legend>
-              </div>
-              <div class="form-group__field-wrapper">
-                <input class="form-group__field form-group__field--tel" type="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*">
-                <label class="visually-hidden" for="tel">Ваш номер телефона</label>
-              </div>
-            </fieldset>
-            <fieldset class="order__form-group form-group">
-              <div class="form-group__legend-wrapper form-group__legend-wrapper--field form-group__legend-wrapper--email">
-                <legend class="form-group__title">E-mail</legend>
-              </div>
-              <div class="form-group__field-wrapper">
-                <input class="form-group__field form-group__field--email" type="email" id="email" placeholder="Ваш Email*">
-                <label class="visually-hidden" for="email">Ваш Email</label>
-              </div>
-            </fieldset>
-            <fieldset class="order__form-group form-group">
-              <div class="form-group__legend-wrapper form-group__legend-wrapper--add">
-                <legend class="form-group__title">ДОП</legend>
-              </div>
-              <div class="form-group__field-wrapper form-group__field-wrapper--textarea">
-                <textarea class="form-group__textarea" name="wishes" id="wishes" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
-                <label class="visually-hidden" for="wishes">Пожелания к заказу</label>
-              </div>
-            </fieldset>
-            <p class="order__text-required">*Поля обязательны для заполнения</p>
-            <button class="button order__button" type="submit">Отправить заказ</button>
-          </form>
-        </section>
-
-      </div>
+      <section class="order">
+        <h2 class="visually-hidden">Форма заказа</h2>
+        <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="order__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="order__form-group form-group">
+            <h3 class="form-group__title-wrapper">
+              <span class="form-group__title">Тип</span>
+            </h3>
+            <div class="form-group__radio-wrapper">
+              <input class="visually-hidden form-group__radio" type="radio" id="interior" name="type" value="interior" checked>
+              <label class="form-group__radio-label" for="interior">Аксессуар для  интерьера</label>
+            </div>
+            <div class="form-group__radio-wrapper">
+              <input class="visually-hidden form-group__radio" type="radio" id="toy" name="type" value="toy">
+              <label class="form-group__radio-label" for="toy">Детская игрушка</label>
+            </div>
+          </fieldset>
+          <fieldset class="order__form-group form-group">
+            <h3 class="form-group__title-wrapper">
+              <span class="form-group__title">Цвет</span>
+            </h3>
+            <div class="form-group__checkbox-wrapper">
+              <input class="visually-hidden form-group__checkbox" type="checkbox" id="white" name="white" checked>
+              <label class="form-group__checkbox-label" for="white">Белый</label>
+            </div>
+            <div class="form-group__checkbox-wrapper">
+              <input class="visually-hidden form-group__checkbox" type="checkbox" id="gray" name="gray" checked>
+              <label class="form-group__checkbox-label" for="gray">Серый</label>
+            </div>
+            <div class="form-group__checkbox-wrapper">
+              <input class="visually-hidden form-group__checkbox" type="checkbox" id="tiffani" name="tiffani">
+              <label class="form-group__checkbox-label" for="tiffani">«Тиффани»</label>
+            </div>
+            <div class="form-group__checkbox-wrapper">
+              <input class="visually-hidden form-group__checkbox" type="checkbox" id="black" name="black">
+              <label class="form-group__checkbox-label" for="black">Черный</label>
+            </div>
+            <div class="form-group__checkbox-wrapper">
+              <input class="visually-hidden form-group__checkbox" type="checkbox" id="pink" name="pink">
+              <label class="form-group__checkbox-label" for="pink">Розовый</label>
+            </div>
+            <div class="form-group__checkbox-wrapper">
+              <input class="visually-hidden form-group__checkbox" type="checkbox" id="orange" name="orange">
+              <label class="form-group__checkbox-label" for="orange">Оранжевый</label>
+            </div>
+          </fieldset>
+          <fieldset class="order__form-group form-group">
+            <h3 class="form-group__title-wrapper form-group__title-wrapper--field">
+              <span class="form-group__title">ФИО</span>
+            </h3>
+            <div class="form-group__field-wrapper">
+              <label class="form-group__field-label" for="firstname">Имя:</label>
+              <input class="form-group__field" type="text" id="firstname" placeholder="Введите ваше имя*" required>
+            </div>
+            <div class="form-group__field-wrapper">
+              <label class="form-group__field-label" for="lastname">Фамилия:</label>
+              <input class="form-group__field" type="text" id="lastname" placeholder="Укажите фамилию*" required>
+            </div>
+            <div class="form-group__field-wrapper form-group__field-wrapper--middle-name">
+              <label class="form-group__field-label" for="middle-name">Отчество:</label>
+              <input class="form-group__field" type="text" id="middle-name" placeholder="Отчество, если желаете">
+            </div>
+          </fieldset>
+          <fieldset class="order__form-group form-group">
+            <h3 class="form-group__title-wrapper form-group__title-wrapper--tel">
+              <span class="form-group__title">Тел</span>
+            </h3>
+            <div class="form-group__field-wrapper">
+              <input class="form-group__field form-group__field--tel" type="tel" id="tel" placeholder="+7 XXX XX XX*" required>
+              <label class="visually-hidden" for="tel">Ваш номер телефона</label>
+            </div>
+          </fieldset>
+          <fieldset class="order__form-group form-group">
+            <h3 class="form-group__title-wrapper form-group__title-wrapper--email">
+              <span class="form-group__title">E-mail</span>
+            </h3>
+            <div class="form-group__field-wrapper">
+              <input class="form-group__field form-group__field--email" type="email" id="email" placeholder="Ваш Email*" required>
+              <label class="visually-hidden" for="email">Ваш Email</label>
+            </div>
+          </fieldset>
+          <fieldset class="order__form-group form-group">
+            <h3 class="form-group__title-wrapper form-group__title-wrapper--add">
+              <span class="form-group__title">ДОП</span>
+            </h3>
+            <div class="form-group__field-wrapper form-group__field-wrapper--textarea">
+              <textarea class="form-group__textarea" name="wishes" id="wishes" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
+              <label class="visually-hidden" for="wishes">Пожелания к заказу</label>
+            </div>
+          </fieldset>
+          <p class="order__text-required">*Поля обязательны для заполнения</p>
+          <button class="button order__button" type="submit">Отправить заказ</button>
+        </form>
+      </section>
 
     </main>
 
-    <footer class="page-footer padding-container">
+    <footer class="page-footer">
       <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="#">
