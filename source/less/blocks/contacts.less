@@ -1,0 +1,41 @@
+.contacts {
+  padding-top: 27px;
+  padding-bottom: 39px;
+}
+
+.contacts__title {
+  margin-bottom: 11px;
+  font-size: 18px;
+  color: @color-black;
+}
+
+.contacts__row {
+  display: flex;
+  width: 100%;
+
+  &:last-child {
+    margin-bottom: 21px;
+  }
+}
+
+.contacts__text {
+  &:first-child {
+    width: 77px;
+    flex-shrink: 0;
+  }
+
+  &--email {
+    border-bottom: 1px solid @color-turquoise;
+  }
+}
+
+.contacts__map {
+  width: 100%;
+  min-width: 322px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.contacts__wrapper {
+  .padding-container();
+}

@@ -1,0 +1,188 @@
+.form-group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form-group__title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 33px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1;
+  color: @color-turquoise;
+  text-transform: uppercase;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    width: 50px;
+    height: 1px;
+    background-color: @color-turquoise;
+  }
+
+  &--field {
+    margin-bottom: 27px;
+  }
+
+  &--tel,
+  &--email {
+    margin-bottom: 5px;
+  }
+
+  &--add {
+    margin-bottom: 24px;
+  }
+}
+
+.form-group__title {
+  min-width: 43px;
+  margin-right: 18px;
+}
+
+.form-group__radio-wrapper {
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 44px;
+  }
+}
+
+.form-group__radio-label,
+.form-group__checkbox-label {
+  display: block;
+  margin-left: 62px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  color: @color-black;
+}
+
+.form-group__radio-label {
+  margin-bottom: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border: 2px solid @color-main;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 11px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+  }
+}
+
+.form-group__radio:checked + .form-group__radio-label::after {
+  background-color: @color-turquoise;
+}
+
+.form-group__checkbox-wrapper {
+  position: relative;
+  margin-bottom: 41px;
+
+  &:last-child {
+    margin-bottom: 42px;
+  }
+}
+
+.form-group__checkbox-label {
+  padding-top: 2px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: 36px;
+    height: 35px;
+    border: 2px solid @color-main;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 9px;
+    width: 20px;
+    height: 8px;
+  }
+}
+
+.form-group__checkbox:checked + .form-group__checkbox-label::after {
+  border-left: 2px solid @color-black;
+  border-bottom: 2px solid @color-black;
+  transform: rotate(-45deg);
+}
+
+.form-group__field-wrapper {
+  margin-bottom: 21px;
+
+  &--middle-name {
+    margin-bottom: 31px;
+  }
+}
+
+.form-group__field-label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  color: @color-black;
+}
+
+.form-group__field {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  font: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  border-bottom: 2px solid @color-black;
+
+  &::placeholder {
+    color: @color-main;
+    opacity: 0.3;
+  }
+
+  &--tel,
+  &--email {
+    margin-bottom: 11px;
+  }
+}
+
+.form-group__field-wrapper--textarea {
+  margin-bottom: 0;
+}
+
+.form-group__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 142px;
+  padding: 14px;
+  resize: none;
+  font: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  border: 2px solid @color-main;
+
+  &::placeholder {
+    color: @color-main;
+    opacity: 0.3;
+  }
+}
