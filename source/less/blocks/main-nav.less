@@ -9,3 +9,24 @@
   border: none;
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  .main-nav {
+    order: 1;
+    width: 50%;
+    flex-grow: 1;
+  }
+
+  .main-nav__open {
+    display: none;
+  }
+}
+
+@media (min-width: 1250px) {
+  .main-nav {
+    order: -1;
+    flex-grow: 0;
+    width: auto;
+    padding-left: 50px;
+  }
+}

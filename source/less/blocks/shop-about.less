@@ -25,6 +25,8 @@
 }
 
 .shop-about__catalog-list {
+  display: flex;
+  flex-direction: column;
   position: relative;
   z-index: 1;
   list-style: none;
@@ -77,4 +79,58 @@
   font-weight: bold;
   color: @color-white;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .shop-about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .shop-about__title {
+    min-height: 473px;
+    padding-top: 84px;
+  }
+
+  .shop-about__catalog-list {
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .shop-about__catalog-item {
+    flex-grow: 1;
+    width: 334px;
+    padding-left: 35px;
+
+    &--interior::after {
+      top: 30px;
+    }
+
+    &--toys::after {
+      top: 32px;
+      right: 34px;
+    }
+  }
+
+  .shop-about__catalog-link {
+    padding-top: 28px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .shop-about__title {
+    width: 655px;
+    margin: 0 auto;
+    padding-top: 112px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .shop-about__catalog-list {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
 }

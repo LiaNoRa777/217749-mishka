@@ -64,3 +64,74 @@
     background-position: 3px 2px;
   }
 }
+
+@media (min-width: 768px) {
+  .company-about {
+    padding-top: 48px;
+    padding-bottom: 26px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .company-about__title {
+    margin-bottom: 49px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .company-about__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 871px;
+  }
+
+  .company-about__item {
+    box-sizing: border-box;
+    width: 50%;
+    margin-bottom: 57px;
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 22px;
+
+    &--handmade {
+      order: 1;
+    }
+
+    &--price {
+      order: 2;
+    }
+
+    &--producer {
+      order: 3;
+    }
+
+    &--likes {
+      order: 4;
+      padding-right: 95px;
+    }
+
+    &--package {
+      order: 5;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .company-about {
+    padding-top: 76px;
+    padding-bottom: 33px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .company-about__title {
+    margin-left: 171px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .company-about__list {
+    width: 700px;
+    margin-left: 176px;
+  }
+}
