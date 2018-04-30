@@ -1,9 +1,10 @@
 .company-about {
-  padding-top: 13px;
+  padding-top: 34px;
   .padding-container();
 }
 
 .company-about__title {
+  margin-top: 0;
   margin-bottom: 32px;
   font-size: 25px;
   color: @color-black;
@@ -67,10 +68,9 @@
 
 @media (min-width: 768px) {
   .company-about {
-    padding-top: 48px;
+    padding-top: 66px;
     padding-bottom: 26px;
-    padding-left: 50px;
-    padding-right: 50px;
+    .padding-container();
   }
 
   .company-about__title {
@@ -118,10 +118,12 @@
 
 @media (min-width: 1250px) {
   .company-about {
-    padding-top: 76px;
+    box-sizing: border-box;
+    width: 1250px;
+    margin: 0 auto;
+    padding-top: 83px;
     padding-bottom: 33px;
-    padding-left: 100px;
-    padding-right: 100px;
+    .padding-container();
   }
 
   .company-about__title {
