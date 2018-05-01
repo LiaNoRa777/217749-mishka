@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @width-tablet) {
   .main-nav {
     order: 1;
     width: 50%;
@@ -22,7 +22,7 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: @width-desktop) {
   .main-nav {
     order: -1;
     flex-grow: 0;

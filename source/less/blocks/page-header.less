@@ -37,7 +37,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @width-tablet) {
   .page-header__wrapper {
     flex-direction: row;
     align-items: center;
@@ -97,7 +97,11 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: @width-desktop) {
+  .page-header {
+    overflow: hidden;
+  }
+
   .page-header__logo {
     flex-grow: 0;
     min-width: 290px;
@@ -138,7 +142,7 @@
     max-width: 300px;
     margin-right: 51px;
     top: 89px;
-    right: 0;
+    right: 1px;
     z-index: 1;
   }
 

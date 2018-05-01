@@ -66,7 +66,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: @width-tablet) {
   .company-about {
     padding-top: 66px;
     padding-bottom: 26px;
@@ -116,10 +116,10 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: @width-desktop) {
   .company-about {
     box-sizing: border-box;
-    width: 1250px;
+    max-width: 1250px;
     margin: 0 auto;
     padding-top: 83px;
     padding-bottom: 33px;

@@ -61,7 +61,7 @@
   margin-top: 25px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @width-tablet) {
   .top-product {
     position: relative;
     display: flex;
@@ -119,10 +119,10 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: @width-desktop) {
   .top-product {
     box-sizing: border-box;
-    width: 1250px;
+    max-width: 1250px;
     margin: 0 auto;
     padding-top: 125px;
     padding-bottom: 72px;

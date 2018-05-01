@@ -37,7 +37,7 @@
   margin-top: 38px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @width-tablet) {
   .reviews {
     display: flex;
     flex-wrap: wrap;
@@ -77,10 +77,10 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: @width-desktop) {
   .reviews {
     box-sizing: border-box;
-    width: 1250px;
+    max-width: 1250px;
     margin: 0 auto;
     padding-top: 70px;
     padding-bottom: 133px;
