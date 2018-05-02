@@ -24,12 +24,54 @@
 
 @media (min-width: @width-tablet) {
   .order {
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 53px;
   }
 
   .order__description {
-    margin-bottom: 74px;
+    margin-bottom: 57px;
     font-size: 17px;
     line-height: 30px;
+    .padding-container();
+  }
+
+  .order__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .padding-container();
+  }
+
+  .order__text-required {
+    flex-shrink: 0;
+    order: 1;
+    width: 334px;
+    margin-top: 9px;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: right;
+  }
+
+  .order__button {
+    width: 230px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .order {
+    padding-top: 102px;
+  }
+
+  .order__description {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .order__button-wrapper {
+    width: 700px;
+    margin: 0 auto;
   }
 }
