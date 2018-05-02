@@ -91,11 +91,19 @@
 
 @media (min-width: @width-desktop) {
   .making {
-    min-height: 455px;
+    box-sizing: border-box;
+    max-width: @width-desktop;
+    margin: 0 auto;
+    margin-bottom: 105px;
   }
 
   .making__video {
     position: absolute;
+    width: 682px;
+    height: 455px;
+  }
+
+  .making__image {
     width: 682px;
     height: 455px;
   }
@@ -106,12 +114,29 @@
     align-items: flex-start;
     width: 369px;
     margin-left: auto;
+    padding-top: 48px;
+    padding-left: 78px;
+    padding-right: 75px;
+
+    &::before {
+      margin-bottom: 27px;
+    }
   }
 
   .making__wrapper {
     box-sizing: border-box;
     width: 369px;
-    min-height: 288px;
+    min-height: 289px;
     margin-left: auto;
+    padding-left: 76px;
+  }
+
+  .making__text {
+    margin-bottom: 47px;
+  }
+
+  .making__button {
+    width: 230px;
+    margin-left: 4px;
   }
 }
