@@ -1,31 +1,42 @@
 .making {
-  min-width: 260px;
   margin-bottom: 58px;
   .padding-container();
 }
 
 .making__title {
+  display: flex;
   box-sizing: border-box;
+  align-items: center;
   width: 100%;
   margin: 0;
   padding-top: 25px;
   padding-bottom: 22px;
-  padding-left: 89px;
+  padding-left: 32px;
   font-size: 17px;
   line-height: 24px;
   color: @color-black;
-  background-image: url("../img/icon-video.svg");
-  background-repeat: no-repeat;
-  background-position: 33px 30px;
   border: 1px solid @color-dark-gray;
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 22px;
+    margin-top: -6px;
+    margin-right: 24px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
 }
 
 .making__image {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .making__wrapper {
-  padding-top: 13px;
+  padding-top: 26px;
   padding-bottom: 32px;
   padding-left: 33px;
   padding-right: 33px;
@@ -33,7 +44,74 @@
 }
 
 .making__text {
+  margin-top: 0;
   margin-bottom: 25px;
   font-size: 13px;
   line-height: 24px;
+}
+
+@media (min-width: @width-tablet) {
+  .making {
+    display: flex;
+    flex-direction: column;
+    min-width: 256px;
+    margin-bottom: 63px;
+  }
+
+  .making__video {
+    order: -1;
+  }
+
+  .making__title {
+    padding-top: 38px;
+    padding-left: 37px;
+    font-size: 20px;
+    border-bottom: none;
+
+    &::before {
+      margin-top: -2px;
+      margin-right: 28px;
+    }
+  }
+
+  .making__wrapper {
+    padding-top: 10px;
+    padding-bottom: 45px;
+    padding-left: 39px;
+    padding-right: 39px;
+    border-top: none;
+  }
+
+  .making__text {
+    margin-bottom: 35px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .making {
+    min-height: 455px;
+  }
+
+  .making__video {
+    position: absolute;
+    width: 682px;
+    height: 455px;
+  }
+
+  .making__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 369px;
+    margin-left: auto;
+  }
+
+  .making__wrapper {
+    box-sizing: border-box;
+    width: 369px;
+    min-height: 288px;
+    margin-left: auto;
+  }
 }
