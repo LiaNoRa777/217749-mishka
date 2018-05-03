@@ -3,29 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="main-body">
+  <body class="main-body inner-page">
 
-    <header class="page-header flex-container">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/header-logo.svg" width="86" height="35" alt="Мишка - магазин милых штук ручной работы для дома">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__open" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link"><span class="site-list__menu-center">Каталог товаров</span></a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html"><span class="site-list__menu-center">Вязание на заказ</span></a>
-          </li>
-        </ul>
-      </nav>
-      <a class="page-header__search" href="#"><span class="site-list__menu-center site-list__menu-center--search">Поиск по сайту</span></a>
-      <a class="page-header__cart" href="#"><span class="site-list__menu-center site-list__menu-center--cart">Корзина: пока пуста</span></a>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/header-logo.svg" width="86" height="35" alt="Мишка - магазин милых штук ручной работы для дома">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__open" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list site-list--inner">
+            <li class="site-list__item">
+              <a class="site-list__link"><span class="site-list__menu-center">Каталог товаров</span></a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html"><span class="site-list__menu-center">Вязание на заказ</span></a>
+            </li>
+          </ul>
+        </nav>
+        <a class="page-header__search" href="#"><span class="site-list__menu-center site-list__menu-center--search">Поиск по сайту</span></a>
+        <a class="page-header__cart" href="#"><span class="site-list__menu-center site-list__menu-center--cart">Корзина: пока пуста</span></a>
+        <p class="page-header__delivery page-header__delivery--inner">Бесплатная доставка по России</p>
+      </div>
+      <div class="page-header__additional-info page-header__additional-info--inner">
+        <div class="page-header__wrapper">
+          <a class="page-header__new" href="#">Новые поступления</a>
+          <a class="page-header__sale" href="#">Распродажа</a>
+        </div>
+      </div>
     </header>
 
     <main class="page-main">
@@ -95,7 +105,7 @@
           <img class="making__image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Превью видео с процессом производства">
         </div>
         <div class="making__wrapper">
-          <p class="making__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <p class="making__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о&nbsp;том, как появляются наши товары.</p>
           <a class="button making__button" href="form.html">Сделать заказ</a>
         </div>
       </section>
@@ -103,29 +113,34 @@
     </main>
 
     <footer class="page-footer">
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">
-            <span class="visually-hidden">Мы в Инстаграмe</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">
-            <span class="visually-hidden">Мы в Фейсбуке</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">
-            <span class="visually-hidden">Мы в Твиттере</span>
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <div class="copyright__wrapper">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-          </a>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/footer-logo.svg" width="102" height="34" alt="Логотип">
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+              <span class="visually-hidden">Мы в Инстаграмe</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Мы в Твиттере</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <div class="copyright__wrapper">
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            </a>
+          </div>
         </div>
       </div>
     </footer>

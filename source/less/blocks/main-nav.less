@@ -9,3 +9,23 @@
   border: none;
   cursor: pointer;
 }
+
+@media (min-width: @width-tablet) {
+  .main-nav {
+    order: 1;
+    width: 50%;
+    flex-grow: 1;
+  }
+
+  .main-nav__open {
+    display: none;
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .main-nav {
+    order: -1;
+    flex-grow: 0;
+    width: auto;
+  }
+}

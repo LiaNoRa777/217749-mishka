@@ -1,9 +1,10 @@
 .company-about {
-  padding-top: 13px;
+  padding-top: 34px;
   .padding-container();
 }
 
 .company-about__title {
+  margin-top: 0;
   margin-bottom: 32px;
   font-size: 25px;
   color: @color-black;
@@ -62,5 +63,77 @@
   &--package::before {
     background-image: url("../img/icon-feature-gift.svg");
     background-position: 3px 2px;
+  }
+}
+
+@media (min-width: @width-tablet) {
+  .company-about {
+    padding-top: 66px;
+    padding-bottom: 26px;
+    .padding-container();
+  }
+
+  .company-about__title {
+    margin-bottom: 49px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .company-about__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 871px;
+  }
+
+  .company-about__item {
+    box-sizing: border-box;
+    width: 50%;
+    margin-bottom: 57px;
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 22px;
+
+    &--handmade {
+      order: 1;
+    }
+
+    &--price {
+      order: 2;
+    }
+
+    &--producer {
+      order: 3;
+    }
+
+    &--likes {
+      order: 4;
+      padding-right: 95px;
+    }
+
+    &--package {
+      order: 5;
+    }
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .company-about {
+    box-sizing: border-box;
+    max-width: @width-desktop;
+    margin: 0 auto;
+    padding-top: 83px;
+    padding-bottom: 33px;
+    .padding-container();
+  }
+
+  .company-about__title {
+    margin-left: 171px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .company-about__list {
+    width: 700px;
+    margin-left: 176px;
   }
 }
