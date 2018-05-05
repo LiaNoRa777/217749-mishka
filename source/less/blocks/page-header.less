@@ -37,6 +37,13 @@
   display: none;
 }
 
+@media (max-width: @width-mobile-only) {
+  .page-header__search--closed,
+  .page-header__cart--closed {
+    display: none;
+  }
+}
+
 @media (min-width: @width-tablet) {
   .page-header__wrapper {
     flex-direction: row;

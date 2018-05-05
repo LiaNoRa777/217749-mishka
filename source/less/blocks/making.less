@@ -19,6 +19,7 @@
 
   &::before {
     content: "";
+    display: block;
     width: 40px;
     height: 22px;
     margin-top: -6px;
@@ -91,6 +92,7 @@
 
 @media (min-width: @width-desktop) {
   .making {
+    position: relative;
     box-sizing: border-box;
     max-width: @width-desktop;
     margin: 0 auto;
@@ -99,6 +101,7 @@
 
   .making__video {
     position: absolute;
+    top: 0;
     width: 682px;
     height: 455px;
   }
