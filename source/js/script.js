@@ -6,6 +6,7 @@ var topProductOrder = document.querySelector(".top-product__button");
 var popup = document.querySelector(".modal");
 var overlay = document.querySelector(".overlay");
 var addToCart = document.querySelectorAll(".product__add");
+var btnCart = addToCart[i];
 
 navMain.classList.remove("main-nav--nojs");
 headerSearch.classList.add("page-header__search--closed");
@@ -32,7 +33,7 @@ topProductOrder.addEventListener("click", function(evt) {
 });
 
 for (var i = 0; i < addToCart.length; i++) {
-  addToCart[i].addEventListener("click", function(evt) {
+  btnCart.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.add("modal--show");
     overlay.classList.add("overlay--show");

@@ -79,6 +79,10 @@
   font-weight: bold;
   color: @color-white;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @width-tablet) {
@@ -107,6 +111,14 @@
     &--toys::after {
       top: 32px;
       right: 34px;
+    }
+
+    &:hover {
+      padding-bottom: 10px;
+    }
+
+    &:hover .shop-about__catalog-link {
+      padding-top: 23px;
     }
   }
 

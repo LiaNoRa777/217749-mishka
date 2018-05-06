@@ -1,9 +1,18 @@
 .making {
   margin-bottom: 58px;
   .padding-container();
+
+  &:hover .making__title::after {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active .making__title::after {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .making__title {
+  position: relative;
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -27,6 +36,16 @@
     background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
     background-position: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 369px;
+    min-height: 454px;
   }
 }
 

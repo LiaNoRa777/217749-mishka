@@ -3,6 +3,11 @@
   text-transform: uppercase;
   background-color: @color-turquoise;
   border-color: @color-turquoise;
+
+  &:hover,
+  &:focus {
+    border-color: @color-main;
+  }
 }
 
 .choose-size__wrapper {
@@ -23,6 +28,18 @@
   line-height: 1;
   color: @color-main;
   border: 2px solid @color-dark-gray;
+
+  &:hover {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    border-color: @color-turquoise;
+  }
+}
+
+.choose-size__field:focus + .choose-size__size {
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: @width-tablet) {

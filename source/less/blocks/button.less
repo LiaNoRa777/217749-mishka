@@ -15,4 +15,14 @@
   text-decoration: none;
   border: 2px solid @color-main;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: @color-main;
+    color: @color-white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

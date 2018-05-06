@@ -16,6 +16,15 @@
   text-align: center;
   border-top: 1px solid @color-dark-gray;
   border-bottom: 1px solid @color-dark-gray;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__search,
@@ -29,6 +38,15 @@
   color: @color-black;
   text-decoration: none;
   border-bottom: 1px solid @color-dark-gray;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &[href]:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .page-header__new,
@@ -133,6 +151,15 @@
     line-height: 24px;
     color: @color-black;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-header__sale {
@@ -145,6 +172,15 @@
     line-height: 24px;
     color: @color-black;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-header__delivery {
