@@ -57,7 +57,7 @@
 
 .form-group__radio-label,
 .form-group__checkbox-label {
-  display:  flex;
+  display: flex;
   font-size: 17px;
   font-weight: bold;
   line-height: 18px;
@@ -114,7 +114,6 @@
   &:last-child {
     margin-bottom: 32px;
   }
-
 }
 
 .form-group__checkbox-label {
@@ -153,14 +152,6 @@
 
 .form-group__checkbox:active + .form-group__checkbox-label::before {
   border-color: rgba(68, 68, 68, 0.3);
-}
-
-.form-group__field {
-  &:hover,
-  &:focus {
-    border-color: @color-turquoise;
-    outline: none;
-  }
 }
 
 .form-group__field-wrapper {
@@ -222,6 +213,12 @@
   &--email {
     margin-bottom: 11px;
     padding-right: 41px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: @color-turquoise;
+    outline: none;
   }
 }
 
