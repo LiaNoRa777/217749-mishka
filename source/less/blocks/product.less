@@ -76,6 +76,7 @@
 @media (min-width: @width-tablet) {
   .product {
     display: flex;
+    margin-bottom: 54px;
   }
 
   .product__wrapper {
@@ -85,13 +86,24 @@
 
   .product__image {
     min-width: 334px;
+    min-height: 334px;
   }
 
   .product__price-wrapper {
+    align-items: center;
     margin-top: auto;
+    padding-top: 20px;
+    padding-bottom: 23px;
+    padding-left: 3px;
+  }
+
+  .product__add {
+    padding-top: 10px;
+    padding-right: 5px;
   }
 
   .product__name {
+    margin-top: 25px;
     font-size: 20px;
   }
 
@@ -119,6 +131,7 @@
 
   .product__wrapper {
     height: 100%;
+    padding-left: 24px;
   }
 
   .product__name {
@@ -127,6 +140,11 @@
 
   .product__parametrs {
     margin-bottom: 15px;
+  }
+
+  .product__price-wrapper {
+    padding-top: 18px;
+    padding-left: 0;
   }
 
   .product__price {
