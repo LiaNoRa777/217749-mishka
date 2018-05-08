@@ -95,6 +95,7 @@
 
   .shop-about__catalog-list {
     flex-direction: row;
+    align-items: flex-end;
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -114,11 +115,15 @@
     }
 
     &:hover {
-      padding-bottom: 5px;
-    }
+      transform: translateY(-5px);
 
-    &:hover .shop-about__catalog-link {
-      padding-top: 23px;
+      &:first-child {
+        box-shadow: 0 5px 0 0 @color-turquoise;
+      }
+
+      &:last-child {
+        box-shadow: 0 5px 0 0 #56c3b2;
+      }
     }
   }
 
