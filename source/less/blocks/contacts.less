@@ -27,6 +27,16 @@
 
   &--email {
     border-bottom: 1px solid @color-turquoise;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -108,7 +118,8 @@
     box-sizing: border-box;
     padding-top: 165px;
     padding-bottom: 88px;
-    .padding-container();
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .contacts__title {

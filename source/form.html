@@ -10,11 +10,13 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/header-logo.svg" width="86" height="35" alt="Мишка - магазин милых штук ручной работы для дома">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__open" type="button">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="img/header-logo.svg" width="86" height="35" alt="Мишка - магазин милых штук ручной работы для дома">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list site-list site-list--inner">
@@ -134,7 +136,7 @@
               <h3 class="form-group__title-wrapper form-group__title-wrapper--email">
                 <span class="form-group__title">E-mail</span>
               </h3>
-              <div class="form-group__field-wrapper">
+              <div class="form-group__field-wrapper form-group__field-wrapper--email">
                 <input class="form-group__field form-group__field--email" type="email" id="email" placeholder="Ваш Email*" required>
                 <label class="visually-hidden" for="email">Ваш Email</label>
               </div>
@@ -162,7 +164,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="index.html">
           <img class="page-footer__logo-image" src="img/footer-logo.svg" width="102" height="34" alt="Логотип">
         </a>
         <ul class="page-footer__social social">
@@ -192,6 +194,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>

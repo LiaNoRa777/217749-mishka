@@ -10,15 +10,17 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/header-logo.svg" width="86" height="35" alt="Мишка - магазин милых штук ручной работы для дома">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__open" type="button">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="img/header-logo.svg" width="86" height="35" alt="Мишка - магазин милых штук ручной работы для дома">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--catalog">
+            <li class="site-list__item">
               <a class="site-list__link" href="catalog.html"><span class="site-list__menu-center">Каталог товаров</span></a>
             </li>
             <li class="site-list__item">
@@ -185,16 +187,19 @@
       <p class="modal__size">Выберите размер:</p>
       <form class="modal__form choose-size" action="https://echo.htmlacademy.ru" method="post">
         <div class="choose-size__wrapper">
-          <input class="visually-hidden" type="radio" name="size" id="s" value="s">
+          <input class="visually-hidden choose-size__field" type="radio" name="size" id="s" value="s">
           <label class="choose-size__size" for="s">S</label>
-          <input class="visually-hidden" type="radio" name="size" id="m"  value="m">
+          <input class="visually-hidden choose-size__field" type="radio" name="size" id="m"  value="m">
           <label class="choose-size__size" for="m">M</label>
-          <input class="visually-hidden" type="radio" name="size" id="l"  value="l">
+          <input class="visually-hidden choose-size__field" type="radio" name="size" id="l"  value="l">
           <label class="choose-size__size" for="l">L</label>
         </div>
         <button class="button choose-size__button" type="submit">Добавить</button>
       </form>
     </section>
+    <div class="overlay"></div>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>

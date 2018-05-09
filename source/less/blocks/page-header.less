@@ -10,12 +10,30 @@
   flex-direction: column;
 }
 
-.page-header__logo {
+.page-header__logo-wrapper {
   padding-top: 21px;
-  padding-bottom: 16px;
+  padding-bottom: 22px;
+  padding-left: 60px;
+  padding-right: 60px;
   text-align: center;
   border-top: 1px solid @color-dark-gray;
   border-bottom: 1px solid @color-dark-gray;
+}
+
+.page-header__logo {
+  display: block;
+  width: 90px;
+  height: 35px;
+  margin: 0 auto;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__search,
@@ -29,12 +47,28 @@
   color: @color-black;
   text-decoration: none;
   border-bottom: 1px solid @color-dark-gray;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &[href]:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .page-header__new,
 .page-header__sale,
 .page-header__delivery {
   display: none;
+}
+
+@media (max-width: @width-mobile-only) {
+  .page-header__search--closed,
+  .page-header__cart--closed {
+    display: none;
+  }
 }
 
 @media (min-width: @width-tablet) {
@@ -72,14 +106,18 @@
     }
   }
 
-  .page-header__logo {
+  .page-header__logo-wrapper {
     flex-grow: 1;
     box-sizing: border-box;
     min-width: 350px;
     padding-left: 50px;
-    padding-bottom: 26px;
+    padding-bottom: 31px;
     text-align: left;
     border-top: none;
+  }
+
+  .page-header__logo {
+    margin: 0;
   }
 
   .page-header__delivery {
@@ -106,7 +144,7 @@
     overflow: hidden;
   }
 
-  .page-header__logo {
+  .page-header__logo-wrapper {
     flex-grow: 0;
     min-width: 290px;
     padding-left: 40px;
@@ -126,6 +164,15 @@
     line-height: 24px;
     color: @color-black;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-header__sale {
@@ -138,6 +185,15 @@
     line-height: 24px;
     color: @color-black;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-header__delivery {

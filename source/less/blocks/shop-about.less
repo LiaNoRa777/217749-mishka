@@ -79,6 +79,10 @@
   font-weight: bold;
   color: @color-white;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @width-tablet) {
@@ -91,6 +95,7 @@
 
   .shop-about__catalog-list {
     flex-direction: row;
+    align-items: flex-end;
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -107,6 +112,18 @@
     &--toys::after {
       top: 32px;
       right: 34px;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+
+      &:first-child {
+        box-shadow: 0 5px 0 0 @color-turquoise;
+      }
+
+      &:last-child {
+        box-shadow: 0 5px 0 0 #56c3b2;
+      }
     }
   }
 
