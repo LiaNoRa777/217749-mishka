@@ -44,8 +44,13 @@
     padding-top: 77px;
     padding-bottom: 85px;
     background-image: url("../img/review@1x.jpg");
+    background-size: 350px 457px;
     background-repeat: no-repeat;
     .padding-container();
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__title {
