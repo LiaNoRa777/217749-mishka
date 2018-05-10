@@ -12,7 +12,11 @@
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrapper">
           <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/header-logo.svg" width="86" height="35" alt="Мишка - магазин милых штук ручной работы для дома">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo-image" src="img/header-logo.svg" width="86" height="35" alt="Мишка - магазин милых штук ручной работы для дома">
+            </picture>
           </a>
         </div>
         <nav class="main-nav main-nav--closed main-nav--nojs">
