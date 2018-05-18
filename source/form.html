@@ -32,8 +32,22 @@
             </li>
           </ul>
         </nav>
-        <a class="page-header__search" href="#"><span class="site-list__menu-center site-list__menu-center--search">Поиск по сайту</span></a>
-        <a class="page-header__cart" href="#"><span class="site-list__menu-center site-list__menu-center--cart">Корзина: пока пуста</span></a>
+        <a class="page-header__search" href="#">
+          <span class="site-list__menu-center site-list__menu-center--search">
+            <svg class="page-header__icon-search" width="17.6" height="17.6">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+            <span class="page-header__search-desc">Поиск по сайту</span>
+          </span>
+        </a>
+        <a class="page-header__cart" href="#">
+          <span class="site-list__menu-center site-list__menu-center--cart">
+            <svg class="page-header__icon-cart" width="20.294" height="18.849">
+              <use xlink:href="img/sprite.svg#cart"></use>
+            </svg>
+            Корзина: пока пуста
+          </span>
+        </a>
         <p class="page-header__delivery page-header__delivery--inner">Бесплатная доставка по России</p>
       </div>
       <div class="page-header__additional-info page-header__additional-info--inner">
@@ -132,6 +146,9 @@
               <div class="form-group__field-wrapper form-group__field-wrapper--tel">
                 <input class="form-group__field form-group__field--tel" type="tel" id="tel" placeholder="+7 XXX XX XX*" required>
                 <label class="visually-hidden" for="tel">Ваш номер телефона</label>
+                <svg class="form-group__phone-icon" width="25" height="24">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
               </div>
             </div>
           </fieldset>
@@ -143,6 +160,9 @@
               <div class="form-group__field-wrapper form-group__field-wrapper--email">
                 <input class="form-group__field form-group__field--email" type="email" id="email" placeholder="Ваш Email*" required>
                 <label class="visually-hidden" for="email">Ваш Email</label>
+                <svg class="form-group__mail-icon" width="32" height="32">
+                  <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
               </div>
             </div>
           </fieldset>
@@ -169,22 +189,34 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-image" src="img/footer-logo.svg" width="102" height="34" alt="Логотип">
+          <span class="visually-hidden">Логотип</span>
+          <svg width="102" height="34">
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
+          </svg>
         </a>
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы в Инстаграмe</span>
+              <svg width="22" height="21">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы в Фейсбуке</span>
+              <svg width="15" height="28">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы в Твиттере</span>
+              <svg width="23" height="20">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -192,7 +224,10 @@
           <div class="copyright__wrapper">
             <b class="copyright__text">Разработано</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+              <span class="visually-hidden">HTML Academy</span>
+              <svg width="27" height="34">
+                <use xlink:href="img/sprite.svg#html-academy"></use>
+              </svg>
             </a>
           </div>
         </div>

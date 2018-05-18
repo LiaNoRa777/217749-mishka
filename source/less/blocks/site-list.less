@@ -42,22 +42,6 @@
     opacity: 1;
     background-repeat: no-repeat;
   }
-
-  //&--search::before {
-    //width: 18px;
-    //height: 18px;
-    //top: 5px;
-    //left: -23px;
-    //background-image: url("../img/icon-search.svg");
-  //}
-
-  &--cart::before {
-    width: 21px;
-    height: 19px;
-    top: 3px;
-    left: -23px;
-    background-image: url("../img/icon-cart.svg");
-  }
 }
 
 @media (min-width: @width-tablet) {
@@ -78,12 +62,9 @@
   }
 
   .site-list__menu-center {
+    display: inline;
     margin: 0;
     padding-left: 0;
-
-    &--search {
-      display: none;
-    }
 
     &--cart {
       margin-left: auto;
@@ -97,9 +78,9 @@
 
   .site-list__link {
     box-sizing: border-box;
-    width: 167px;
     padding-top: 17px;
     padding-left: 0;
+    padding-right: 36px;
   }
 }
 
