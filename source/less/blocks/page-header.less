@@ -40,12 +40,11 @@
 .page-header__cart {
   position: relative;
   z-index: 1;
+  margin: 0;
   padding-top: 26px;
   padding-bottom: 28px;
   padding-left: 30px;
   padding-right: 30px;
-  color: @color-black;
-  text-decoration: none;
   border-bottom: 1px solid @color-dark-gray;
 
   &[href]:hover,
@@ -58,17 +57,32 @@
   }
 }
 
-.page-header__search use {
+.page-header__search-link {
+  display: block;
+  color: @color-black;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.page-header__search-link use {
   opacity: 0.2;
 }
 
-.page-header__search:hover use,
-.page-header__search:focus use {
+.page-header__search-link:hover use,
+.page-header__search-link:focus use {
   fill: @color-turquoise;
   opacity: 1;
 }
 
-.page-header__search:active use {
+.page-header__search-link:active use {
   opacity: 0.3;
 }
 
@@ -80,17 +94,32 @@
   left: -24px;
 }
 
-.page-header__cart use {
+.page-header__cart-link {
+  display: block;
+  color: @color-black;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.page-header__cart-link use {
   opacity: 0.2;
 }
 
-.page-header__cart:hover use,
-.page-header__cart:focus use {
+.page-header__cart-link:hover use,
+.page-header__cart-link:focus use {
   fill: @color-turquoise;
   opacity: 1;
 }
 
-.page-header__cart:active use {
+.page-header__cart-link:active use {
   opacity: 0.3;
 }
 
@@ -149,7 +178,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 82px;
-    padding-right: 44px;
+    padding-right: 51px;
 
     &::after {
       content: "";
@@ -165,7 +194,7 @@
     flex-grow: 1;
     box-sizing: border-box;
     min-width: 350px;
-    padding-left: 50px;
+    padding-left: 49px;
     padding-bottom: 31px;
     text-align: left;
     border-top: none;
@@ -224,9 +253,9 @@
   .page-header__new {
     display: block;
     order: 1;
+    margin-top: 17px;
     margin-left: 50px;
-    padding-top: 17px;
-    padding-right: 26px;
+    margin-right: 26px;
     font-size: 15px;
     line-height: 24px;
     color: @color-black;
@@ -245,9 +274,9 @@
   .page-header__sale {
     display: block;
     order: 2;
-    padding-top: 17px;
-    padding-left: 35px;
-    padding-right: 26px;
+    margin-top: 17px;
+    margin-left: 35px;
+    margin-right: 26px;
     font-size: 15px;
     line-height: 24px;
     color: @color-black;
@@ -273,6 +302,7 @@
 
   .page-header__wrapper {
     position: relative;
+    align-items: flex-start;
     width: 1150px;
     margin: 0 auto;
   }
