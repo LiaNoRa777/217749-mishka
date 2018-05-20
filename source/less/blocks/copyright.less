@@ -4,10 +4,6 @@
   border-top: 1px solid #e5e5e5;
   padding-top: 20px;
   padding-bottom: 23px;
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .copyright__wrapper {
@@ -16,6 +12,10 @@
   width: 184px;
   box-sizing: border-box;
   margin: 0 auto;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -29,6 +29,15 @@
   width: 27px;
   height: 34px;
   margin: auto;
+}
+
+.copyright__link use {
+  fill: #63d1bb;
+}
+
+.copyright__link:hover use,
+.copyright__link:focus use {
+  fill: #46c1ae;
 }
 
 @media (min-width: @width-tablet) {

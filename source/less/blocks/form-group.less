@@ -161,28 +161,24 @@
   &--middle-name {
     margin-bottom: 31px;
   }
+}
 
-  &--tel::after {
-    content: "";
-    position: absolute;
-    top: 12px;
-    right: 8px;
-    width: 25px;
-    height: 24px;
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-  }
+.form-group__phone-icon {
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  width: 25px;
+  height: 24px;
+  fill: rgba(0, 0, 0, 0.2);
+}
 
-  &--email::after {
-    content: "";
-    position: absolute;
-    top: 12px;
-    right: 4px;
-    width: 32px;
-    height: 26px;
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-  }
+.form-group__mail-icon {
+  position: absolute;
+  top: 12px;
+  right: 4px;
+  width: 32px;
+  height: 32px;
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .form-group__field-label {
@@ -205,8 +201,7 @@
   border-bottom: 2px solid @color-black;
 
   &::placeholder {
-    color: @color-main;
-    opacity: 0.3;
+    color: rgba(68, 68, 68, 0.3);
   }
 
   &--tel,
@@ -220,6 +215,12 @@
     border-color: @color-turquoise;
     outline: none;
   }
+}
+
+.form-group__field:hover ~ svg use,
+.form-group__field:focus ~ svg use,
+.form-group__field:active ~ svg use {
+  fill: @color-turquoise;
 }
 
 .form-group__field-wrapper--textarea {
@@ -238,8 +239,7 @@
   border: 2px solid @color-main;
 
   &::placeholder {
-    color: @color-main;
-    opacity: 0.3;
+    color: rgba(68, 68, 68, 0.3);
   }
 
   &:hover,
@@ -387,17 +387,17 @@
 
     &--tel {
       margin-bottom: 7px;
-
-      &::after {
-        top: 17px;
-        right: 26px;
-      }
     }
+  }
 
-    &--email::after {
-      top: 17px;
-      right: 22px;
-    }
+  .form-group__phone-icon {
+    top: 17px;
+    right: 26px;
+  }
+
+  .form-group__mail-icon {
+    top: 17px;
+    right: 22px;
   }
 
   .form-group__field-label,
@@ -469,13 +469,13 @@
 
   .form-group__field-wrapper {
     width: 700px;
+  }
 
-    &--tel::after {
-      right: 8px;
-    }
+  .form-group__phone-icon {
+    right: 8px;
+  }
 
-    &--email::after {
-      right: 4px;
-    }
+  .form-group__mail-icon {
+    right: 4px;
   }
 }

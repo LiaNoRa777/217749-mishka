@@ -36,7 +36,6 @@
 
 .shop-about__catalog-item {
   position: relative;
-  .padding-container();
 
   &:first-child {
     background-color: @color-turquoise;
@@ -49,6 +48,7 @@
   &::after {
     content: "";
     position: absolute;
+    opacity: 0.5;
   }
 
   &--interior::after {
@@ -66,12 +66,24 @@
     height: 60px;
     background-image: url("../img/icon-toy.svg");
   }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+
+  &:focus-within::after {
+    opacity: 0.7;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .shop-about__catalog-link {
   display: block;
   position: relative;
-  width: 170px;
+  z-index: 1;
   padding-top: 26px;
   padding-bottom: 29px;
   font-size: 19px;
@@ -79,6 +91,8 @@
   font-weight: bold;
   color: @color-white;
   text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
 
   &:active {
     opacity: 0.3;
@@ -86,6 +100,20 @@
 }
 
 @media (min-width: @width-tablet) {
+  .shop-about {
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 25px;
+      bottom: -15px;
+      left: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+    }
+  }
+
   .shop-about__title {
     min-height: 473px;
     padding-top: 84px;
@@ -133,12 +161,20 @@
 
   .shop-about__catalog-link {
     padding-top: 28px;
+    padding-left: 0;
     font-size: 20px;
     line-height: 30px;
   }
 }
 
 @media (min-width: @width-desktop) {
+  .shop-about {
+    &::after {
+      height: 37px;
+      bottom: -21px;
+    }
+  }
+
   .shop-about__image {
     top: -42px;
   }

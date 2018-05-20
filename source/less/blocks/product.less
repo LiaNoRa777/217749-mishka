@@ -67,10 +67,20 @@
 .product__add {
   width: 20px;
   height: 19px;
-  padding-top: 5px;
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  background-position: 0 4px;
+  padding-top: 2px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.product__add use {
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+.product__add:hover use,
+.product__add:focus use {
+  fill: @color-turquoise;
 }
 
 @media (min-width: @width-tablet) {
@@ -82,6 +92,7 @@
   .product__wrapper {
     display: flex;
     flex-direction: column;
+    padding-right: 31px;
   }
 
   .product__image {
@@ -89,16 +100,15 @@
   }
 
   .product__price-wrapper {
-    align-items: center;
+    align-items: baseline;
     margin-top: auto;
+    margin-left: 4px;
     padding-top: 20px;
-    padding-bottom: 23px;
-    padding-left: 3px;
+    padding-bottom: 24px;
   }
 
   .product__add {
-    padding-top: 10px;
-    padding-right: 5px;
+    padding-top: 0;
   }
 
   .product__name {
