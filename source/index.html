@@ -32,7 +32,7 @@
             </li>
           </ul>
         </nav>
-        <p class="page-header__search">
+        <div class="page-header__search">
           <a class="page-header__search-link" href="#">
             <span class="site-list__menu-center site-list__menu-center--search">
               <svg class="page-header__icon-search" width="18" height="18">
@@ -41,8 +41,8 @@
               <span class="page-header__search-desc">Поиск по сайту</span>
             </span>
           </a>
-        </p>
-        <p class="page-header__cart">
+        </div>
+        <div class="page-header__cart">
           <a class="page-header__cart-link" href="#">
             <span class="site-list__menu-center site-list__menu-center--cart">
               <svg class="page-header__icon-cart" width="20" height="19">
@@ -51,7 +51,7 @@
               Корзина: пока пуста
             </span>
           </a>
-        </p>
+        </div>
         <p class="page-header__delivery">Бесплатная доставка по России</p>
       </div>
       <div class="page-header__additional-info">
@@ -70,6 +70,10 @@
       <section class="shop-about">
         <h2 class="visually-hidden">Наша деятельность</h2>
         <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/shop-about-desktop@1x.webp 1x, img/shop-about-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/shop-about-tablet@1x.webp 1x, img/shop-about-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/shop-about-mobile@1x.webp 1x, img/shop-about-mobile@2x.webp 2x">
+
           <source media="(min-width: 1150px)" srcset="img/shop-about-desktop@1x.jpg 1x, img/shop-about-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/shop-about-tablet@1x.jpg 1x, img/shop-about-tablet@2x.jpg 2x">
           <img class="shop-about__image" src="img/shop-about-mobile@1x.jpg" srcset="img/shop-about-mobile@2x.jpg 2x" alt="Создаем уют в вашем доме">
@@ -107,6 +111,10 @@
             </table>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/basket-desktop@1x.webp 1x, img/basket-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/basket-tablet@1x.webp 1x, img/basket-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/basket-mobile@1x.webp 1x, img/basket-mobile@2x.webp 2x">
+
             <source media="(min-width: 1150px)" srcset="img/basket-desktop@1x.jpg 1x, img/basket-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/basket-tablet@1x.jpg 1x, img/basket-tablet@2x.jpg 2x">
             <img class="top-product__image" src="img/basket-mobile@1x.jpg" srcset="img/basket-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки">
@@ -171,6 +179,10 @@
         </div>
         <div class="contacts__map">
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+
             <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
             <img class="contacts__image-map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="457" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
@@ -193,7 +205,7 @@
         </a>
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link social__link--instagram" href="#">
               <span class="visually-hidden">Мы в Инстаграмe</span>
               <svg width="22" height="21">
                 <use xlink:href="img/sprite.svg#instagram"></use>
@@ -209,7 +221,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link social__link--twitter" href="#">
               <span class="visually-hidden">Мы в Твиттере</span>
               <svg width="23" height="20">
                 <use xlink:href="img/sprite.svg#twitter"></use>
@@ -218,15 +230,13 @@
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <div class="copyright__wrapper">
-          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="copyright__text">Разработано</b>
             <span class="visually-hidden">HTML Academy</span>
             <svg width="27" height="34">
               <use xlink:href="img/sprite.svg#html-academy"></use>
             </svg>
           </a>
-          </div>
         </div>
       </div>
     </footer>
@@ -249,6 +259,8 @@
     <div class="overlay"></div>
 
     <script src="js/picturefill.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
     <script src="js/script.js"></script>
 
   </body>

@@ -15,19 +15,29 @@
 }
 
 .social__link {
-  margin: auto;
+  &--instagram {
+    margin-top: 5px;
+  }
+
+  &--twitter {
+    margin-top: 4px;
+  }
 
   &:active {
     opacity: 0.3;
   }
 }
 
-.social__link use {
+.social svg {
+  pointer-events: none;
+}
+
+.social__link svg {
   fill: #231f20;
 }
 
-.social__link:hover use,
-.social__link:focus use {
+.social__link:hover svg,
+.social__link:focus svg {
   fill: #46c1ae;
 }
 
