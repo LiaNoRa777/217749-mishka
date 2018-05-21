@@ -32,10 +32,14 @@
   }
 }
 
-.page-footer__logo[href]:hover use,
-.page-footer__logo[href]:focus use {
-  fill: #46c1ae;
-}
+  .page-footer__logo[href] svg {
+    pointer-events: none;
+  }
+
+  .page-footer__logo[href]:hover svg,
+  .page-footer__logo[href]:focus svg {
+    fill: #46c1ae;
+  }
 
 @media (min-width: @width-desktop) {
   .page-footer__wrapper {

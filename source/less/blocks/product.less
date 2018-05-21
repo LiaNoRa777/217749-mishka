@@ -65,6 +65,7 @@
 }
 
 .product__add {
+  display: block;
   width: 20px;
   height: 19px;
   padding-top: 2px;
@@ -74,12 +75,13 @@
   }
 }
 
-.product__add use {
+.product__add svg {
   fill: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
 }
 
-.product__add:hover use,
-.product__add:focus use {
+.product__add:hover svg,
+.product__add:focus svg {
   fill: @color-turquoise;
 }
 

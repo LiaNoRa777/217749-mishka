@@ -190,7 +190,7 @@
         </a>
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link social__link--instagram" href="#">
               <span class="visually-hidden">Мы в Инстаграмe</span>
               <svg width="22" height="21">
                 <use xlink:href="img/sprite.svg#instagram"></use>
@@ -206,7 +206,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link social__link--twitter" href="#">
               <span class="visually-hidden">Мы в Твиттере</span>
               <svg width="23" height="20">
                 <use xlink:href="img/sprite.svg#twitter"></use>
@@ -215,15 +215,13 @@
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <div class="copyright__wrapper">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="copyright__text">Разработано</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="visually-hidden">HTML Academy</span>
-              <svg width="27" height="34">
-                <use xlink:href="img/sprite.svg#html-academy"></use>
-              </svg>
-            </a>
-          </div>
+            <span class="visually-hidden">HTML Academy</span>
+            <svg width="27" height="34">
+              <use xlink:href="img/sprite.svg#html-academy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
@@ -245,6 +243,8 @@
     </section>
 
     <script src="js/picturefill.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
     <script src="js/script.js"></script>
 
   </body>
