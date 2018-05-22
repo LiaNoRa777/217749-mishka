@@ -5,6 +5,7 @@ var headerCart = document.querySelector(".page-header__cart");
 var topProductOrder = document.querySelector(".top-product__button");
 var popup = document.querySelector(".modal");
 var overlay = document.querySelector(".overlay");
+var sizeChoose = document.querySelector(".choose-size__field");
 var addToCart = document.querySelectorAll(".product__add");
 
 navMain.classList.remove("main-nav--nojs");
@@ -25,11 +26,14 @@ navToggle.addEventListener("click", function() {
   }
 });
 
-topProductOrder.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popup.classList.add("modal--show");
-  overlay.classList.add("overlay--show");
-});
+if (topProductOrder != null) {
+  topProductOrder.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    popup.classList.add("modal--show");
+    overlay.classList.add("overlay--show");
+    sizeChoose.focus();
+  });
+}
 
 for (var i = 0; i < addToCart.length; i++) {
   var btnCart = addToCart[i];
@@ -37,6 +41,7 @@ for (var i = 0; i < addToCart.length; i++) {
     evt.preventDefault();
     popup.classList.add("modal--show");
     overlay.classList.add("overlay--show");
+    sizeChoose.focus();
   });
 }
 
@@ -55,3 +60,28 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
+
+function initMap() {
+  var mapCenter = {lat: 59.938993, lng: 30.322987};
+  var map = new google.maps.Map(document.querySelector('.contacts__map-google'), {
+    zoom: 17,
+    center: mapCenter,
+    styles: [
+      {
+        featureType: "all",
+        stylers: [
+          {
+            lightness: "-5"
+          }
+        ]
+      }
+    ]
+  });
+  var marker = new google.maps.Marker({
+    position: mapCenter,
+    map: map,
+    icon: {
+      url: "../img/icon-map-pin.svg"
+    }
+  });
+}

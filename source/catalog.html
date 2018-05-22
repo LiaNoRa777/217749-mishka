@@ -231,16 +231,17 @@
       <p class="modal__size">Выберите размер:</p>
       <form class="modal__form choose-size" action="https://echo.htmlacademy.ru" method="post">
         <div class="choose-size__wrapper">
-          <input class="visually-hidden" type="radio" name="size" id="s" value="s">
+          <input class="visually-hidden choose-size__field" type="radio" name="size" id="s" value="s">
           <label class="choose-size__size" for="s">S</label>
-          <input class="visually-hidden" type="radio" name="size" id="m"  value="m">
+          <input class="visually-hidden choose-size__field" type="radio" name="size" id="m"  value="m">
           <label class="choose-size__size" for="m">M</label>
-          <input class="visually-hidden" type="radio" name="size" id="l"  value="l">
+          <input class="visually-hidden choose-size__field" type="radio" name="size" id="l"  value="l">
           <label class="choose-size__size" for="l">L</label>
         </div>
         <button class="button choose-size__button" type="submit">Добавить</button>
       </form>
     </section>
+    <div class="overlay"></div>
 
     <script src="js/picturefill.js"></script>
     <script src="js/svg4everybody.min.js"></script>
