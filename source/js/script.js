@@ -8,6 +8,8 @@ var overlay = document.querySelector(".overlay");
 var sizeChoose = document.querySelector(".choose-size__field");
 var addToCart = document.querySelectorAll(".product__add");
 
+svg4everybody();
+
 navMain.classList.remove("main-nav--nojs");
 headerSearch.classList.add("page-header__search--closed");
 headerCart.classList.add("page-header__cart--closed");
@@ -81,7 +83,9 @@ function initMap() {
     position: mapCenter,
     map: map,
     icon: {
-      url: "../img/icon-map-pin.svg"
+      url: "../img/icon-map-pin.svg",
+      optimized: false,
+      scaledSize: new google.maps.Size(66, 101)
     }
   });
 }
