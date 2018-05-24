@@ -13,6 +13,7 @@
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-position: 24px;
+    background-size: 300px 6px;
   }
 }
 
@@ -54,10 +55,22 @@
 }
 
 .contacts__map {
+  position: absolute;
   width: 100%;
   height: 457px;
   margin-bottom: 39px;
   overflow: hidden;
+}
+
+.contacts__map-container {
+  width: 100%;
+  height: 457px;
+  margin-bottom: 39px;
+}
+
+.contacts__interactive-map {
+  width: 100%;
+  height: 457px;
 }
 
 .contacts__image-map {
@@ -77,6 +90,7 @@
     &::before {
       height: 15px;
       background-position: 20px;
+      background-size: 750px 15px;
     }
   }
 
@@ -122,6 +136,10 @@
     margin-bottom: 55px;
   }
 
+  .contacts__map-container {
+    margin-bottom: 55px;
+  }
+
   .contacts__button {
     width: 230px;
     margin: 0 auto;
@@ -144,6 +162,7 @@
       right: auto;
       width: 1050px;
       height: 23px;
+      background-size: 1050px 23px;
     }
   }
 
@@ -154,26 +173,35 @@
     &::after {
       top: -8px;
       right: auto;
-      left: -112px;
+      left: -107px;
     }
   }
 
   .contacts__wrapper {
     flex-direction: column;
     width: 350px;
-    padding-left: 175px;
+    padding-left: 170px;
     padding-right: 0;
   }
 
   .contacts__row {
     width: 300px;
+    margin-bottom: 2px;
+    margin-left: 3px;
 
     &:last-child {
-      margin-bottom: 52px;
+      margin-bottom: 51px;
     }
   }
 
   .contacts__map {
+    top: 95px;
+    right: 50px;
+    width: 525px;
+    height: 457px;
+  }
+
+  .contacts__map-container {
     position: absolute;
     top: 95px;
     right: 50px;
@@ -187,5 +215,6 @@
 
   .contacts__button {
     margin: 0;
+    margin-left: 5px;
   }
 }
